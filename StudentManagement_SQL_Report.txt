@@ -1,0 +1,72 @@
+======================================================================
+         STUDENT MANAGEMENT SYSTEM — SQL OUTPUT REPORT
+======================================================================
+
+📋  QUERY 1 — ALL STUDENT DETAILS
+
+ID   Name               Gender  Age  Grd   Math   Sci   Eng   Total
+--------------------------------------------------------------
+1    Alice Johnson      Female  16   10    92.0  88.0  95.0   275.0
+2    Bob Smith          Male    17   11    78.0  82.0  70.0   230.0
+3    Clara Davis        Female  15   9     85.0  79.0  88.0   252.0
+4    David Lee          Male    18   12    95.0  91.0  87.0   273.0
+5    Emma Wilson        Female  16   10    65.0  72.0  80.0   217.0
+6    Frank Brown        Male    17   12    55.0  60.0  58.0   173.0
+7    Grace Martinez     Female  15   9     88.0  94.0  91.0   273.0
+8    Henry Taylor       Male    18   12    76.0  68.0  74.0   218.0
+9    Isabella Thomas    Female  16   10    83.0  77.0  89.0   249.0
+10   James White        Male    17   11    91.0  85.0  82.0   258.0
+11   Karen Harris       Female  15   9     70.0  66.0  75.0   211.0
+12   Liam Robinson      Male    18   12    60.0  73.0  65.0   198.0
+
+📊  QUERY 2 — AVERAGE SCORE PER SUBJECT
+
+  Avg Math   Avg Science   Avg English
+----------------------------------------
+     78.17         77.92          79.5
+
+🏆  QUERY 3 — TOP PERFORMER (Highest Total Score)
+
+ID   Name               Grade   Math   Sci   Eng   Total
+-------------------------------------------------------
+1    Alice Johnson      10      92.0  88.0  95.0   275.0
+
+🎓  QUERY 4 — STUDENT COUNT PER GRADE
+
+Grade      Count
+------------------
+Grade 10        3
+Grade 11        2
+Grade 12        4
+Grade 9         3
+
+⚧  QUERY 5 — AVERAGE SCORE BY GENDER
+
+Gender    Avg Math  Avg Sci  Avg Eng  Avg Total
+------------------------------------------------
+Female        80.5    79.33    86.33     246.17
+Male         75.83     76.5    72.67      225.0
+
+📐  QUERY 6 — STUDENTS WITH MATH SCORE > 80
+
+ID   Name               Grade   MathScore
+------------------------------------------
+4    David Lee          Grade 12         95.0
+1    Alice Johnson      Grade 10         92.0
+10   James White        Grade 11         91.0
+7    Grace Martinez     Grade 9         88.0
+3    Clara Davis        Grade 9         85.0
+9    Isabella Thomas    Grade 10         83.0
+
+✏️   QUERY 7 — UPDATE STUDENT GRADE (Frank Brown: 11 → 12)
+
+ID   Name                 Before    After
+------------------------------------------
+6    Frank Brown        Grade 11 Grade 12
+
+  SQL: UPDATE Students SET Grade = '12' WHERE Name = 'Frank Brown';
+  ✅  Update successful — Grade changed from 11 to 12.
+
+======================================================================
+  DATABASE: StudentManagement   |   TABLE: Students   |   Rows: 12
+======================================================================
